@@ -1,0 +1,12 @@
+.homeContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .homeContainer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
