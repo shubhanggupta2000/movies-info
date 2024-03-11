@@ -1,7 +1,6 @@
-# InSynk Studios Frontend Developer
+# Movie's Info App
 
 ![1](https://user-images.githubusercontent.com/79959361/208253283-de35cf72-60b8-4a3e-b09b-625d6c461594.png)
-
 
 ## Getting Started
 

@@ -5,9 +5,10 @@ import "./Main.scss";
 import { TMDB_MAIN, API_KEY } from "../endpoints/tmdb";
 
 const fetchLatestMovies = async () => {
-  const response = await fetch(`${TMDB_MAIN}/movie/top_rated?api_key=${API_KEY}`);
+  const response = await fetch(
+    `${TMDB_MAIN}/movie/top_rated?api_key=${API_KEY}`
+  );
   const data = await response.json();
-  console.log(data);
   return data.results;
 };
 

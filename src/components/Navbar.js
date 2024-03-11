@@ -44,7 +44,7 @@ const Navbar = (props) => {
           <input
             className="searchInput"
             type="text"
-            placeholder="Search for a movie"
+            placeholder="Search for..."
             value={input}
             onChange={inputValChange}
           />

@@ -3,6 +3,8 @@ import "./Card.scss";
 import { TMDB_IMAGE_URL } from "../endpoints/tmdb";
 
 const Card = ({ poster_path, title, vote_average, id, setOpen, setId }) => {
+  const formattedRating = vote_average?.toFixed(2);
+
   return (
     <div
       className="movieCard"
@@ -18,7 +20,7 @@ const Card = ({ poster_path, title, vote_average, id, setOpen, setId }) => {
           backgroundSize: "cover",
         }}
       >
-        <p className="rating">{vote_average}</p>
+        <p className="rating">{formattedRating}</p>
       </div>
       <p className="title">{title}</p>
     </div>

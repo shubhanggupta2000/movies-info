@@ -1,39 +1,39 @@
 .movieCard {
-    border-radius: 8px;
-    width: 280px;
-    cursor: pointer;
-    background-color: #ffffff;
-    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.1);
-    transition: all 200ms;
-  }
-  
-  .movieCard:hover {
-    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
-  }
-  
-  .picture {
-    height: 320px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    position: relative;
-  }
-  
-  .rating {
-    position: absolute;
-    inset: 1em 1em;
-    background-color: #ffffff;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: 7px;
-    border: 1px solid #000000;
-    inset: 0 0 0 15px;
-  }
-  
-  .title {
-    text-align: center;
-    padding: 0.5em 1em;
-  }
+  border-radius: 8px;
+  width: 280px;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.1);
+  transition: all 200ms;
+}
+
+.movieCard:hover {
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.picture {
+  height: 320px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.rating {
+  position: absolute;
+  inset: 1em 1em;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 7px;
+  border: 1px solid #000000;
+  inset: 0 0 0 15px;
+}
+
+.title {
+  text-align: center;
+  padding: 0.5em 1em;
+}
