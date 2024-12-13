@@ -10,6 +10,11 @@ const MovieModal = ({ open, setOpen, movies, id, setId }) => {
     setId(null);
   };
 
+  const formatDate = (dateString) => {
+    const options = { year: "numeric", month: "short", day: "numeric" };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
+
   //   Returning all the movie details passed down as props
   return (
     <div className="modal" style={{ width: open ? "100%" : "0" }}>
@@ -31,7 +36,7 @@ const MovieModal = ({ open, setOpen, movies, id, setId }) => {
           />
           <div className="details">
             <p>
-              <b>Release date</b>: {movie?.release_date}
+              <b>Release date</b>: {formatDate(movie?.release_date)}
             </p>
             <p>{movie?.overview}</p>
             <p>

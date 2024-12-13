@@ -1,5 +1,5 @@
 nav {
-  width: 100%;
+  width: 90%;
 }
 
 nav > .container {
@@ -8,13 +8,23 @@ nav > .container {
   justify-content: space-between;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
 a {
   display: flex;
-  justify-content: center;
 }
 
 .nav__logo {
-  width: clamp(80px, 100%, 120px);
+  width: clamp(80px, 100%, 80px);
   height: auto;
 }
 
@@ -39,7 +49,7 @@ a {
 }
 
 hr {
-  width: 80%;
+  width: 90%;
   margin: 1em auto;
 }
 
@@ -48,7 +58,8 @@ hr {
     flex-direction: column;
   }
 
-  .nav__logo, .searchbox {
+  .nav__logo,
+  .searchbox {
     margin-bottom: 1em;
   }
 }

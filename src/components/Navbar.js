@@ -36,19 +36,23 @@ const Navbar = (props) => {
   return (
     <nav>
       <div className="container">
-        <a href="/">
-          <img src={Logo} alt="InSynk Studios" className="nav__logo" />
-        </a>
-        <label className="searchbox">
-          <img src={Search} alt="Search" className="searchIcon" />
-          <input
-            className="searchInput"
-            type="text"
-            placeholder="Search for..."
-            value={input}
-            onChange={inputValChange}
-          />
-        </label>
+        <div className="logo">
+          <a href="/">
+            <img src={Logo} alt="Faze Films" className="nav__logo" />
+          </a>
+        </div>
+        <div className="search">
+          <label className="searchbox">
+            <img src={Search} alt="Search" className="searchIcon" />
+            <input
+              className="searchInput"
+              type="text"
+              placeholder="Search for..."
+              value={input}
+              onChange={inputValChange}
+            />
+          </label>
+        </div>
       </div>
       <hr />
     </nav>
