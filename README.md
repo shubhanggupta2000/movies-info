@@ -1,6 +1,6 @@
 # Movie's Info App
 
-Checkout the live site here.
+Checkout the [live site](https://fazevennom-movies-info.netlify.app/) here.
 
 
 ## Getting Started
