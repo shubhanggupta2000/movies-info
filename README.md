@@ -24,6 +24,7 @@ npm install
 ```env
 REACT_APP_API_KEY="<<api key>>"
 ```
+# Obtain your API key by signing up on [The Movies DB](https://www.themoviedb.org/) and navigating to your account settings under the 'API' section. Ensure the key is stored securely in the `.env` file and never shared publicly.
 
 - Start the Application.
 
