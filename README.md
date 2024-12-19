@@ -1,7 +1,8 @@
 # Movie's Info App
 
-Checkout the [live site](https://fazevennom-movies-info.netlify.app/) here.
+Checkout the [live site](https://faze-movies-info.vercel.app/) here.
 
+![1](https://github.com/user-attachments/assets/add61289-838d-4e59-b1a9-d6c076ad7a75)
 
 ## Getting Started
 
