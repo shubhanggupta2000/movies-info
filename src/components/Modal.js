@@ -17,12 +17,9 @@ const MovieModal = ({ open, setOpen, movies, id, setId }) => {
 
   //   Returning all the movie details passed down as props
   return (
-    <div className="modal" style={{ width: open ? "100%" : "0" }}>
+    <div className="modal" style={{ display: open ? "block" : "none" }}>
       <div className="background" onClick={handleModalClose}></div>
-      <div
-        className="modalContainer"
-        style={{ display: open ? "flex" : "none" }}
-      >
+      <div className="modalContainer">
         <div className="header">
           <p>{movie?.title}</p>
           <button className="closeButton" onClick={handleModalClose}>
