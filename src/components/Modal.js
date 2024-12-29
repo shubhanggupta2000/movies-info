@@ -11,19 +11,32 @@ const MovieModal = ({ open, setOpen, movies, id, setId }) => {
   };
 
   const formatDate = (dateString) => {
-    const options = { year: "numeric", month: "short", day: "numeric" };
-    return new Date(dateString).toLocaleDateString(undefined, options);
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = date.toLocaleString('default', { month: 'short' });
+    const year = date.getFullYear();
+
+    const getDaySuffix = (day) => {
+      if (day > 3 && day < 21) return 'th';
+      switch (day % 10) {
+        case 1: return 'st';
+        case 2: return 'nd';
+        case 3: return 'rd';
+        default: return 'th';
+      }
+    };
+
+    return `${day}${getDaySuffix(day)} ${month} ${year}`;
   };
 
-  //   Returning all the movie details passed down as props
   return (
-    <div className="modal" style={{ display: open ? "block" : "none" }}>
+    <div className="modal" style={{ display: open ? "flex" : "none" }}>
       <div className="background" onClick={handleModalClose}></div>
       <div className="modalContainer">
         <div className="header">
           <p>{movie?.title}</p>
           <button className="closeButton" onClick={handleModalClose}>
-            x
+            &times;
           </button>
         </div>
         <div className="bio">
